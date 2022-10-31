@@ -10,12 +10,12 @@ const [count,{handleSetCount}] = useCounterContext()
  }
 return(
 
-    <>
+    <div style={{border:"1px solid blue" ,margin:"10px" ,padding:"20px"}}>
     <h1>Counter Application</h1>
-    <h2>{count} </h2>
+    <h2>Count {count} </h2>
     <button style={{marginRight:"6px"}} onClick={handleDecrement}>Decrement</button>
     <button onClick={handleIncrement}>Increament</button>
-    </>
+    </div>
 )
 }
 export default Counter
